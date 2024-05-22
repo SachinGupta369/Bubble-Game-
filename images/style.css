@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: "Lora", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(139, 139, 139);
+  display: flex;
+  align-items: center;
+}
+
+#main {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  background-color: rgb(171, 236, 215);
+  height: 85%;
+  width: 85%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#panel1 {
+  font-size: medium;
+}
+
+.top {
+  display: flex;
+  align-self: flex-start;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(117, 190, 224);
+}
+
+.box {
+  color: fff;
+}
