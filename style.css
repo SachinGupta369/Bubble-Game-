@@ -24,19 +24,20 @@ body {
 
 #panel1 {
   background-color: rgb(171, 236, 215);
-  height: 85%;
+  height: 88%;
   width: 85%;
   border-radius: 10px;
 }
 
 .top {
-  height: 100px;
+  height: 90px;
   width: 100%;
   background-color: rgb(117, 190, 224);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 45px;
+  margin-bottom: 5px;
 }
 
 .elem{
@@ -56,20 +57,21 @@ body {
 /* btm start here */
 .btm{
   width: 100%;
-  height: calc(100% - 100px);
+  height: calc(100% - 90px);
   display: flex;
   gap: 18px;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-
 
 .bubble{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: aqua;
   font-size: 26px;

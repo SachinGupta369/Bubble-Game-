@@ -1,6 +1,7 @@
 let bubbly = ""
-let secondss=3
+let secondss=60
 let scoreVal = 0
+let getNewHitRn = 0
 
 // Make bubbles functions
 function makebubbles(){
@@ -20,38 +21,37 @@ function runTimer(){
             secondss--
             document.querySelector("#timeVal").textContent = secondss;
         }else{
-            clearInterval(clearTimer)
+           // document.querySelector(".btm").innerHTML=`<h1> Game Over <h1/>`
         }
-        }
-        ,1000) 
-
- 
+        },1000)  
 }
 
 //Score functions
 function score(){
-    scoreVal =+ 10;
+    scoreVal += 10;
     document.querySelector("#scoreHtml").textContent=scoreVal
 }
 
 //getNewHit functions
 function getNewHit(){
-   let rn = Math.floor(Math.random()*10)
-    document.querySelector("#hitHtml").textContent= rn
+ getNewHitRn = Math.floor(Math.random()*10)
+    document.querySelector("#hitHtml").textContent= getNewHitRn
 }
 
 // Click Hits functions
-function clickHit(){
     document.querySelector(".btm").addEventListener("click",function(ccss){
-       (Number(ccss.target.textContent)  
-    
+    let clickdata = Number(ccss.target.textContent)  
+    if(clickdata === getNewHitRn){
+        score()
+        makebubbles()
+        getNewHit()
+    }
  });
-}
 
-clickHit()
+
 
 getNewHit()
-score()
+//score()
 runTimer()
 makebubbles()
 
