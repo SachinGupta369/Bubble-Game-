@@ -1,5 +1,5 @@
 let bubbly = "";
-let secondss = 3;
+let secondss = 60;
 let scoreVal = 0;
 let getNewHitRn = 0;
 
